@@ -1,5 +1,5 @@
 {
-  "$id":"https://schemas.deltalab-cdn.cloud/cbm/0.1.0/cbm.schema.json",
+  "$id":"https://schema.deltalab-cdn.cloud/cbm/0.1.0/cbm.schema.json",
   "$schema":"https://json-schema.org/draft/2020-12/schema",
   "title":"Comic Book Metadata",
   "description":"Metadata Schema for Comic Book Metadata",
