@@ -1,9 +1,9 @@
 {
-  "$id":"https://schema.deltalab-cdn.cloud/cbm/0.1.0/cbm.schema.json",
+  "$id":"https://schema.deltalab-cdn.cloud/cbm/0.1.1/cbm.schema.json",
   "$schema":"https://json-schema.org/draft/2020-12/schema",
   "title":"Comic Book Metadata",
   "description":"Metadata Schema for Comic Book Metadata",
-  "version":"0.1.0",
+  "version":"0.1.1",
   "type":"object",
   "required":[
     "title",
@@ -69,11 +69,15 @@
           "role":{
             "type":"string",
             "description":"The role of the author",
-            "enum":[
+            "enum": [
               "author",
               "editor",
               "illustrator",
-              "translator"
+              "translator",
+              "publisher",
+              "distributor",
+              "original_author",
+              "original_illustrator"
             ]
           }
         }
@@ -130,14 +134,6 @@
       "type":"string",
       "description":"The language of the comic book in ISO 639-1 format",
       "pattern":"^[a-z]{2}(-[A-Z]{2})?$"
-    },
-    "publisher":{
-      "type":"string",
-      "description":"The publisher of the comic book"
-    },
-    "distributor":{
-      "type":"string",
-      "description":"The distributor of the comic book"
     },
     "published_date":{
       "type":"string",
